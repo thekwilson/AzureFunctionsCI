@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "inputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "imagescontainer",
+      "connection": "modernapps_STORAGE"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "ImagesText",
+      "connection": "modernapps_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
