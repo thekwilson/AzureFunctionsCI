@@ -30,7 +30,7 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log, S
             {
                // You would get hold of the inner memory stream here
                 Stream stream = ctnt.ReadAsStreamAsync().Result;
-                log.Info($"stream length = {stream.Length}"); // just to verify
+                log.Info($"MY UPDATE - Stream length = {stream.Length}"); // just to verify
                 if (stream.Length > 1)
                 {
                 
